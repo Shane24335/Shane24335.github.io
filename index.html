@@ -1,17 +1,108 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Thumbspanel</title>
-  </head>
-  <body>
-    <h1>Thumbspanel</h1>
-    <p><a href="http://172.21.3.4:5000/tutd?thumb=up">ThumbsUp</a></p>
-    <p><a href="http://172.21.3.4:5000/tutd?thumb=wiggle">Wiggle</a></p>
-    <p><a href="http://172.21.3.4:5000/tutd?thumb=down">ThumbsDown</a></p>
-    <p><a href="http://172.21.3.4:5000/say?phrase=biscuit">Say</a></p>
-    <p><a href="http://172.21.3.4:5000/bgm?file=rickroll">Background</a></p>
-    <p><a href="http://172.21.3.4:5000/color?hex=8a4c2b">Yes</a></p>
-    <p><a href="http://172.21.3.4:5000/perc?amount=69">Nice</a></p>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Thumbspanel</title>
+  <style media="screen">
+    div {
+      border: 3px solid black;
+      background-color: yellow;
+      margin: 5px;
+      padding: 5px;
+    }
+    }
+
+    #headerBox {}
+
+    .linksBox {}
+
+    a {}
+
+    a:visited {}
+
+    a:hover {}
+
+    body {
+      background-color: black;
+    }
+
+    #content {
+      border: 5px dotted purple;
+      background-color: gray;
+      margin: auto;
+      width: 80%;
+    }
+
+    .linksBox,
+    .textBox {
+      background-color: purple;
+      background-image: linear-gradient(to bottom right, purple, gray);
+      border-radius: 20px
+    }
+
+    .textBox,
+    .linksBox {
+      overflow: auto;
+    }
+
+    .textBox img {
+      width: 25%;
+      float: left;
+      clear: left;
+    }
+
+    a {
+      background-color: gray;
+      font-size: 5px;
+      padding: 10px 40px;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 600px) {
+      #content {
+        width: 100%;
+      }
+
+      body {
+        background-color: black;
+      }
+    }
+
+    a:hover {}
+
+    a:visited {}
+  </style>
+</head>
+
+<body>
+  <div id="content">
+
+    <div id="headerBox">
+      <h1>Thumbspanel</h1>
+    </div>
+    <div class="linksBox">
+      <p><a href="http://172.21.3.4:5000/tutd?thumb=up">ThumbsUp</a></p>
+      <p><a href="http://172.21.3.4:5000/tutd?thumb=down">ThumbsDown</a></p>
+      <p><a href="http://172.21.3.4:5000/tutd?thumb=wiggle">Wiggle</a></p>
+      <p><a href="http://172.21.3.4:5000/tutd?thumb=oops">Oops</a></p>
+    </div>
+    <div class="textBox">
+      <img src="img/ninetails.png" alt="The ninetailed fox from naruto." />
+      <p>This is the tailed beast from naruto. It lives insie the charcter sealed away. Ths seal makes the main charcterm, Naruto, a jinchuriki.</p>
+      <img src="img/battlecats.png" alt="A cat from battlecats." />
+      <p>This cat is from a mobile game called BattleCats. They're a starter caracter that is used as a basic unit and as spam.</p>
+      <img src="img/deidara.png" alt="A character from Naruto." />
+      <p>A character from naruto who uses bomb attacks that he calls "art". He's a part of the akatsuki who wear cloaks whith red cloud symbols on them.</p>
+    </div>
+    <div class="linksBox">
+      <p><a href="http://172.21.3.4:5000/say?phrase=biscuit">Say</a></p>
+      <p><a href="http://172.21.3.4:5000/bgm?file=rickroll">Background</a></p>
+      <p><a href="http://172.21.3.4:5000/color?hex=8a4c2b">Yes</a></p>
+      <p><a href="http://172.21.3.4:5000/perc?amount=69">Nice</a></p>
+      <p><a href="http://172.21.3.4:5000/help">Help</a></p>
+    </div>
+  </div>
+</body>
+
 </html>
