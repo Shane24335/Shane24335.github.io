@@ -1,8 +1,0 @@
-[
-null,
-{"id":1,"expanded":false,"name":"debugroom","order":2,"parentId":2,"scrollX":728,"scrollY":409.77777777777777},
-{"id":2,"expanded":true,"name":"home","order":1,"parentId":0,"scrollX":1404,"scrollY":790.2857142857142},
-{"id":3,"expanded":true,"name":"boulderpass","order":3,"parentId":0,"scrollX":1404,"scrollY":790.2857142857142},
-{"id":4,"expanded":false,"name":"bpdungeon1","order":4,"parentId":3,"scrollX":1390.2857142857142,"scrollY":1541.142857142857},
-{"id":5,"expanded":false,"name":"bpdungeon2","order":5,"parentId":3,"scrollX":1489.7142857142856,"scrollY":1702.2857142857142}
-]
