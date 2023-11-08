@@ -1,4 +1,4 @@
-import './style.css'
+
 import * as THREE from './three.module.js';
 
 const scene = new THREE.Scene();
@@ -26,10 +26,10 @@ pointLight.position.set(0, 0, 50);
 scene.add(ambientLight, pointLight)
 
 //HELPERS
-const lightHelper = new THREE.PointLightHelper(pointLight);
+/*const lightHelper = new THREE.PointLightHelper(pointLight);
 const gridHelper = new THREE.GridHelper(200, 50);
 const axesHelper = new THREE.AxesHelper(20, 20, 20)
-scene.add(lightHelper, gridHelper, axesHelper)
+scene.add(lightHelper, gridHelper, axesHelper)*/
 
 const geoPog = new THREE.CylinderGeometry(5, 5, 0.25, 40);
 const pogtexture = new THREE.TextureLoader().load('eevee.png')
