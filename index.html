@@ -1,101 +1,97 @@
-<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shane Winpigler's Portfolio</title>
+  <style>
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    body {
+      font-size: 24px;
+      color: rgb(5, 215, 230);
+      text-align: center;
+    }
+    #head{
+      font-size: 34px;
+    }
+    p {
+      margin-left: 50%;
+    }
+  </style>
 </head>
 
 <body>
-
-
   <canvas id="bg"></canvas>
-  <main>
-
-    <header>
-      <h1>Shane Winpigler</h1>
-      <p>Welcome to my portfolio...</p>
-    </header>
-
-
-    <blockquote>
-      <p>I like making stuff and putting it on the internet</p>
-    </blockquote>
-
-    <section>
-      <h2>📜 Manifesto</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.
-      </p>
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.
-      </p>
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.
-      </p>
-
-    </section>
-
-    <section class="light">
-      <h2>Projects</h2>
-
-      <p>
-        Most of my projects are in either https://github.com/Shane24335 or https://github.com/VorpalVortex. 
-        These projects use CSS, HTML, Javascript, ExpressJS, SQLite, Python, EJS, Node, or C#.
-      </p>
-
-      <h2>Accomplishments</h2>
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.
-      </p>
-
-    </section>
-
-    <blockquote>
-      <p>The best way out is always through <br>-Robert Frost</p>
-    </blockquote>
-
-    <section class="left">
-      <h2>🌮 Work History</h2>
-
-      <h3>Tnemec</h3>
-      <p>
-        Tnemec is a paint company based in Maryland and Kansas. Part time janitor.
-      </p>
-      <h3>The Islander</h3>
-      <p>
-        The Islander is an old resturant that burned down in maryland. Before it burnt down I worked as a busser and dishwasher. 
-      </p>
-    </section>
-
-    <blockquote>
-      <p>Thanks for watching!</p>
-    </blockquote>
-
-
-  </main>
-  <script type="module" src="/main.js"></script>
+  <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/"
+          }
+        }
+    </script>
+  <script type="module" src="main.js"></script>
+  <p id="head">Shane Winpigler's Portfolio</p> <br>
+  <p id="head">About Me</p>
+  <p>
+    Welcome to my Portfolio! I'm a 17 year old attending York Tech and specializing in coding. I love graphic design and I make my own drawings/creations.
+  </p>
+  <p id="head">Education</p>
+  <p>
+    I'm currently a senior attending York County School of Technology as a full-time student. I'm part of the computer programming class of 23-24.
+  </p>
+  <p>
+    Suspendisse nec pulvinar risus. Vestibulum condimentum sit amet felis in placerat. In pellentesque in elit et
+    aliquet. Vivamus id dictum felis, vel dignissim odio. Praesent finibus ullamcorper augue. Vestibulum tincidunt
+    gravida urna, et facilisis arcu lobortis ac. Mauris elit sem, bibendum eget consectetur in, imperdiet nec erat.
+    Aenean at tristique orci, eget eleifend justo. Donec quis lacus sit amet risus vestibulum iaculis. Aenean et diam
+    tempus, pretium urna vitae, egestas eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+    ac turpis egestas.
+  </p>
+  <p>
+    Accomplishments:
+    <br>
+    Achieved 4 honor rolls across highschool so far.
+  </p>
+  <p>
+    Certifications:
+    <br>
+    OSHA-10
+  </p>
+  <p id="head">Job History</p>
+  <p>
+    The Islander 
+    <br>
+    Part-time busser and dishwasher. 
+    This job helped me build up my collaboration and communication skills by working efficiently with the other staff. 
+  </p>
+  <p>
+    Tnemec 
+    <br>
+    Part-time janitor cleaning the front offices and shipping. 
+    This job has taught me how to create more efficient and effective ways of getting work done quickly.
+  </p>
+  <p id="head">Projects</p>
+  <p>
+    Most of my projects can be found on github at https://github.com/Shane24335 or https://github.com/VorpalVortex.
+  </p>
+  <p>
+    These projects use Javascript, HTML, CSS, ThreeJS, JSON, ExpressJS, EJS, Node, C#, Python, and SQLite.
+  </p>
+  <p>
+    My other projects like artwork/graphic designs are on my VorpalVortex account. 
+    Most of these are hand drawn or mouse drawn.
+  </p>
+  <p id="head">Contact Info</p>
+  <p>
+    Email: swinpigler11@gmail.com
+    Phone#: (717) 324-1755
+  </p>
 </body>
 
 </html>
