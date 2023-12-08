@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/rubik-bubbles');
 canvas {
     position: fixed;
     top: 0;
@@ -5,16 +6,34 @@ canvas {
     z-index: -1;
 }
 body {
-    font-size: 24px;
-    color: rgb(5, 215, 230);
     text-align: center;
 }
 #head{
     font-size: 34px;
 }
-p {
-    margin-left: 50%;
+.tHolder{
     background-color: #44330D;
-    padding: 15px;
-    opacity: 15%;
+    padding: 10px;
+    margin-left: 50%;
+    opacity: 70%;
+}
+p {
+    font-size: 24px;
+    color: #239B98;
+    font-family: 'Rubik Bubbles';
+}
+a{
+    color: #1A13AF;
+}
+#last{
+    margin-bottom: 210px;
+}
+@media (max-width:460px){
+    .tHolder{
+        margin: 0%;
+        padding: none;
+    }
+    #last{
+        margin-bottom: 185px;
+    }
 }

@@ -20,7 +20,7 @@ plane.rotation.y = 10;
 plane.position.y = 10;
 plane.position.x = -15;
 
-const onlyPG = new THREE.PlaneGeometry(35, 15)
+const onlyPG = new THREE.PlaneGeometry( 30, 20 )
 const onlyPT = new THREE.TextureLoader().load('onlyPogs.png')
 const onlyPM = new THREE.MeshBasicMaterial(
     {
@@ -30,26 +30,14 @@ const onlyPM = new THREE.MeshBasicMaterial(
 )
 const onlyP = new THREE.Mesh(onlyPG, onlyPM)
 onlyP.rotation.y = 10;
-onlyP.position.y = -100;
+onlyP.position.y = -40;
 onlyP.position.x = -15
 
-const tGeo = new THREE.PlaneGeometry(20,20)
-const tTexture = new THREE.TextureLoader().load('tnemec.png')
-const tMaterial = new THREE.MeshBasicMaterial(
-    {
-        side: THREE.DoubleSide,
-        map: tTexture
-    }
-)
-const tnemec = new THREE.Mesh( tGeo, tMaterial)
-tnemec.rotation.y = 10
-tnemec.position.y = -45
-tnemec.position.x = -15
-scene.add( plane, tnemec, onlyP )
+scene.add( plane, onlyP )
 
 function moveCamera() {
     const top = document.body.getBoundingClientRect().top;
-    camera.position.y = STARTY + top * 0.25;
+    camera.position.y = STARTY + top * 0.1;
     console.log(top);
 }
 
