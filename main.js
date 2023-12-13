@@ -27,13 +27,28 @@ const onlyPM = new THREE.MeshBasicMaterial(
         side: THREE.DoubleSide,
         map: onlyPT
     }
-)
+    )
 const onlyP = new THREE.Mesh(onlyPG, onlyPM)
+
 onlyP.rotation.y = 10;
 onlyP.position.y = -40;
 onlyP.position.x = -15
 
+if (window.innerWidth <= 460) {
+    camera.position.x = 0
+   for(const child in scene.children) {
+       scene.children[child].rotation.y = 0 * (Math.PI / 180)
+       scene.children[child].position.y = child * -30
+   }
+}else {
+    camera.position.x = 28
+    for (const child in scene.children) {
+        scene.children[child].rotation.y = 15 * (Math.PI / 180)
+        scene.children[child].position.y = child * -25;
+    }
+}
 scene.add( plane, onlyP )
+
 
 function moveCamera() {
     const top = document.body.getBoundingClientRect().top;
