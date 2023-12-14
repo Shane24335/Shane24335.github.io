@@ -17,8 +17,8 @@ const material = new THREE.MeshBasicMaterial(
 );
 const plane = new THREE.Mesh( geometry, material );
 plane.rotation.y = 10;
-plane.position.y = 10;
-plane.position.x = -15;
+plane.position.y = 0;
+plane.position.x = 10;
 
 const onlyPG = new THREE.PlaneGeometry( 30, 20 )
 const onlyPT = new THREE.TextureLoader().load('onlyPogs.png')
@@ -31,20 +31,20 @@ const onlyPM = new THREE.MeshBasicMaterial(
 const onlyP = new THREE.Mesh(onlyPG, onlyPM)
 
 onlyP.rotation.y = 10;
-onlyP.position.y = -40;
-onlyP.position.x = -15
+onlyP.position.y = -50;
+onlyP.position.x = 10
 
 if (window.innerWidth <= 460) {
     camera.position.x = 0
    for(const child in scene.children) {
        scene.children[child].rotation.y = 0 * (Math.PI / 180)
-       scene.children[child].position.y = child * -30
+       scene.children[child].position.y = child * -10
    }
 }else {
     camera.position.x = 28
     for (const child in scene.children) {
         scene.children[child].rotation.y = 15 * (Math.PI / 180)
-        scene.children[child].position.y = child * -25;
+        scene.children[child].position.y = child * -10;
     }
 }
 scene.add( plane, onlyP )
