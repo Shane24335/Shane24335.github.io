@@ -34,6 +34,20 @@ onlyP.rotation.y = 10;
 onlyP.position.y = -50;
 onlyP.position.x = 10
 
+const onlyPMG = new THREE.PlaneGeometry( 5, 20 )
+const onlyPMT = new THREE.TextureLoader().load('onlyPM.png')
+const onlyPMM = new THREE.MeshBasicMaterial(
+    {
+        side: THREE.DoubleSide,
+        map: onlyPMT
+    }
+)
+const onlyPMCSS = new THREE.Mesh(onlyPMG, onlyPMM)
+
+onlyPMCSS.rotation.y = 10;
+onlyPMCSS.position.y = -25;
+onlyPMCSS.position.x = 10
+
 if (window.innerWidth <= 460) {
     camera.position.x = 0
    for(const child in scene.children) {
@@ -47,7 +61,7 @@ if (window.innerWidth <= 460) {
         scene.children[child].position.y = child * -10;
     }
 }
-scene.add( plane, onlyP )
+scene.add( plane, onlyP, onlyPMCSS )
 
 
 function moveCamera() {
